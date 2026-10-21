@@ -1,0 +1,31 @@
+{
+  "name": "wall-bot",
+  "version": "0.1.0",
+  "description": "A 3D interactive robot companion that lives on your wall, rendered with Three.js and projected in real time.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/",
+    "setup:vision": "node scripts/setup-vision.mjs",
+    "postinstall": "node scripts/setup-vision.mjs"
+  },
+  "keywords": [
+    "threejs",
+    "projection-mapping",
+    "robot",
+    "mediapipe",
+    "webgl"
+  ],
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.1.1",
+    "lil-gui": "^0.21.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^6.4.4"
+  }
+}
